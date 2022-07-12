@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    --main-color: #F0F1FF;
+    --links-color: #6A6974;
+    --paragraph-color: #656262;
+    --headings-color: #613995;
+    --button-background: rgba(177, 129, 185, 0.54);;
+    --primary-button-background: #fe7649;
+    --red-color: #d85252 background-color: #e2efff;
+}
+
+.navigation {
+    background: var(--main-color);
+    padding: 10px 100px;
+    max-width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 100; */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+    line-height: 50px;
+
+    color: #663E67;
+}
+
+.logo img {
+    width: 80px;
+    height: 60px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+
+}
+
+.links li {
+    color: var(--links-color);
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.heroSection {
+    background: var(--main-color);
+    border-radius: 0px 0px 300px 50px;
+    max-width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.heroSection .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+
+    /* text-transform: capitalize; */
+    color: var(--headings-color);
+}
+
+.heroSection .left h1 {
+    font-size: 48px;
+    text-transform: capitalize;
+    line-height: 60px;
+    font-weight: 900;
+}
+
+.heroSection .left p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--paragraph-color);
+}
+
+.heroSection .left a{
+    display: flex;
+    width: 170px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn{
+    /* padding: 20px; */
+    color: #fff;
+    border-radius: 30px;
+    background-color: var(--headings-color);
+    
+}
+
+.heroSection img {
+    padding-right: 50px;
+    width: 500px;
+    height: 350px;
+}
+
+.choose{
+    /* padding-top: 10px; */
+    display: flex;
+    height: 50vh;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose .head{
+    font-size: 35px;
+  
+    padding-bottom: 10px;
+}
+.choose .head h2{
+    font-weight: 300;
+}
+
+.choose .cards{ 
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.choose .card{
+    padding: 15px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose .card div{
+    border-radius: 20px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.65);
+}
+.choose .card img{
+    padding: 4px;
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+    
+}
+
+.choose p{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    border-radius: 25px;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:  url(./images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.about .head{
+    position: relative;
+    left: 72%;
+    top: 5%;
+    font-size: 78px;
+    color: var(--headings-color);
+
+}
+
+.about p{
+    width: 45%;
+    font-size: 18px;
+    position: absolute;
+    top: 49%; left: 27%;
+}
+
+
+.gallery .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 10rem; */
+}
+
+.gallery .details{
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+.gallery .details  h2{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 58px;
+    font-weight: 300;
+}
+
+.gallery .details .more{
+    padding: 15px;
+}
+
+
+.gallery .details .more h4{
+    font-size: 30px;
+    color: #891d67;
+    font-weight: 400;
+    padding: 10px 0 ;
+}
+
+.gallery .details .more p{
+    font-size: 17px;
+    color: var(--paragraph-color);
+}
+
+/* .gallery .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.gallery .container{
+    background: var(--main-color);
+    padding: 5px 100px;
+    border-radius: 100px 200px 0 0 ;
+    height: 55vh;
+}
+
+.gallery .section-heading {
+    font-size: 52px;
+    font-weight: 200;
+    color: var(--headings-color);
+    text-align: center;
+   
+} 
+
+.container .slider .slide img{
+    border: 2px solid var(--links-color);
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.container .slider-dots .dots{
+    display: flex!important;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+.container .slider-dots {
+    margin-top: 3rem;
+}
+
+.container .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--links-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+
